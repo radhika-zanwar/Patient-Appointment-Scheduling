@@ -1,4 +1,4 @@
-package com.radhika.springdata.patientsScheduling.entities;
+package com.radhika.springdata.patients.scheduling.entities;
 
 import jakarta.persistence.*;
 
@@ -11,8 +11,6 @@ public class Patient {
     private String firstName;
     private String lastName;
     private String phone;
-    @Email(regexp=".*@.*\\..*", message = "Email should be valid")
-    private String email;
 
     @Embedded
     private Insurance insurance;
@@ -49,7 +47,6 @@ public class Patient {
                 ", firstName='" + firstName + '\'' +
                 ", lastName='" + lastName + '\'' +
                 ", phone='" + phone + '\'' +
-                ", email='" + email + '\'' +
                 ", insurance=" + insurance +
                 ", doctors=" + doctors +
                 ", appointments=" + appointments +
@@ -94,12 +91,5 @@ public class Patient {
 
     public void setInsurance(Insurance insurance) {
         this.insurance = insurance;
-    }
-    public String getEmail() {
-        return email;
-    }
-
-    public void setEmail(String email) {
-        this.email = email;
     }
 }

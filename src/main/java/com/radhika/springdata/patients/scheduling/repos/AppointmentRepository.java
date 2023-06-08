@@ -1,6 +1,6 @@
-package com.radhika.springdata.patientsScheduling.repos;
+package com.radhika.springdata.patients.scheduling.repos;
 
-import com.radhika.springdata.patientsScheduling.entities.Appointment;
+import com.radhika.springdata.patients.scheduling.entities.Appointment;
 import org.springframework.data.repository.CrudRepository;
 
 public interface AppointmentRepository extends CrudRepository<Appointment,Integer> {

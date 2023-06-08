@@ -1,4 +1,4 @@
-package com.radhika.springdata.patientsScheduling.entities;
+package com.radhika.springdata.patients.scheduling.entities;
 
 import jakarta.persistence.Embeddable;
 

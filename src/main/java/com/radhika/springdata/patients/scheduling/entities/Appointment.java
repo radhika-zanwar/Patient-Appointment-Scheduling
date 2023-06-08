@@ -1,4 +1,4 @@
-package com.radhika.springdata.patientsScheduling.entities;
+package com.radhika.springdata.patients.scheduling.entities;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
@@ -16,7 +16,7 @@ public class Appointment {
     private boolean ended;
     private String reason;
 
-    @ManyToOne
+   /* @ManyToOne
     private List<Doctor> doctors;
 
     @ManyToOne
@@ -24,7 +24,7 @@ public class Appointment {
 
     public List<Doctor> getDoctors() {
         return doctors;
-    }
+    }publica
 
     public void setDoctors(List<Doctor> doctors) {
         this.doctors = doctors;
@@ -37,7 +37,7 @@ public class Appointment {
     public void setPatients(List<Patient> patients) {
         this.patients = patients;
     }
-
+*/
     @Override
     public String toString() {
         return "Appointment{" +
